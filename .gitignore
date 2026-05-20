@@ -1,0 +1,34 @@
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# build files
+build/
+coverage/
+
+# environment variables
+.env
+.env.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS
+.DS_Store
+
+# vscode
+.vscode/
+
+# Android / iOS
+android/.gradle/
+android/app/build/
+ios/build/
+
+# TypeScript
+*.tsbuildinfo
