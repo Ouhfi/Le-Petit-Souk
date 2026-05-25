@@ -1,19 +1,23 @@
 import { Pressable, Text, StyleSheet } from "react-native";
-
-export default function ButtonComponent() {
+type Props = {
+  title: string;
+  onPress: () => void;
+};
+export default function Button({onPress}:Props) {
   return (
-    <Pressable style={styles.button}>
-      <Text style={styles.text}>Click me!</Text>
+    <Pressable onPress={onPress}  style={styles.Button}>
+      <Text style={styles.text}> accede au menu</Text>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
-  button: {
-    backgroundColor: "red",
+  Button: {
+    backgroundColor: "#DDAE2C",
     padding: 15,
     borderRadius: 10,
     alignItems: "center",
+    margin : 50,
   },
 
   text: {

@@ -1,16 +1,26 @@
-import { Text, View , Image } from "react-native";
-import  ButtonComponent  from "./component/Button";
-import Home from "./component/Home";  
-
+import { View, StyleSheet } from "react-native";
+import Button from "../components/Button";
+import Logo from "../components/logo";
+import { useRouter } from "expo-router";
 
 export default function App() {
+  const router = useRouter();
+
   return (
-    <View>
-     <Home/>
-      <Text>
-        Hello, World!
-      </Text>
-      <ButtonComponent/>
+    <View style={Styles.grandstyl}>
+      <Logo />
+
+      <Button
+        title="click here"
+        onPress={() => router.push("/menu")}
+      />
     </View>
   );
 }
+
+const Styles = StyleSheet.create({
+  grandstyl: {
+    flex: 1,
+    backgroundColor: "#1A1A1A",
+  },
+});
