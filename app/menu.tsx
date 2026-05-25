@@ -1,28 +1,41 @@
-import { View, Text  , ImageBackground , StyleSheet} from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import Card from "../components/Card";
+import { menuData } from "../Data/Menu";
+import Button from "../components/Button";
+import { useRouter } from "expo-router";
 
 export default function Menu() {
+  const router = useRouter();
   return (
-    <ImageBackground
-      source={require("../image/Gemini_Generated_Image_epv04fepv04fepv0.png")}
-        style={styles.container}>
+    <View style={styles.container}>
+      <Text style={styles.title}>Menu du Jour</Text>
 
-    </ImageBackground>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        {menuData.map((item) => (
+          <Card key={item.id} item={item} />
+        ))}
+      </ScrollView>
       
-    
+       <Button
+              title="home"
+              onPress={() => router.back("/menu")}
+            />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: "100%",
-    height: "100%",
+    backgroundColor: "#1A1A1A",
+    paddingTop: 50,
   },
-  overlay: {
-    flex: 1,
-    backgroundColor: "rgba(0, 0, 0, 0.35)", // Kat-darkni l-image b 35% bach l-fonts ibanou premium
-    justifyContent: "center",
-    alignItems: "center",
-    paddingHorizontal: 20,
+
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "#fff",
+    marginLeft: 15,
+    marginBottom: 10,
   },
 });

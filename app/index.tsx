@@ -11,7 +11,7 @@ export default function App() {
       <Logo />
 
       <Button
-        title="click here"
+        title="menu"
         onPress={() => router.push("/menu")}
       />
     </View>

@@ -4,7 +4,7 @@ export const menuData = [
     name: "Tajine Poulet au Citron",
     category: "Plat chaud",
     price: "55 MAD",
-    image: "/image/tajine.png", // image here
+    image: require("../image/tajine.png"),
   },
 
   {
@@ -12,7 +12,7 @@ export const menuData = [
     name: "Couscous Royal",
     category: "Plat chaud",
     price: "65 MAD",
-    image: "../image/couscous.jpg", // image here
+    image: require("../image/couscous.jpg"),
   },
 
   {
@@ -20,7 +20,7 @@ export const menuData = [
     name: "Harira avec Chebakia",
     category: "Soupe et dessert",
     price: "20 MAD",
-    image: "", // image here
+    image: require("../image/chebakia.jpg"),
   },
 
   {
@@ -28,7 +28,7 @@ export const menuData = [
     name: "Pastilla au Pigeon",
     category: "Entrée",
     price: "45 MAD",
-    image: "../image/pastila.jpg", // image here
+    image: require("../image/pastila.jpg"),
   },
 
   {
@@ -36,7 +36,7 @@ export const menuData = [
     name: "Thé à la Menthe",
     category: "Boisson",
     price: "12 MAD",
-    image: "", // image here
+    image: require("../image/menthe.jpg"),
   },
 
   {
@@ -44,7 +44,7 @@ export const menuData = [
     name: "Jus d'Orange Frais",
     category: "Boisson",
     price: "18 MAD",
-    image: "../image/orange.jpg", // image here
+    image: require("../image/orange.jpg"),
   },
 
   {
@@ -52,6 +52,6 @@ export const menuData = [
     name: "Msemen au Miel",
     category: "Petit-déjeuner",
     price: "15 MAD",
-    image: "../image/msamane.jpg", // image here
+    image: require("../image/msamane.jpg"),
   },
 ];

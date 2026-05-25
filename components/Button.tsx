@@ -3,10 +3,10 @@ type Props = {
   title: string;
   onPress: () => void;
 };
-export default function Button({onPress}:Props) {
+export default function Button({onPress , title}:Props) {
   return (
     <Pressable onPress={onPress}  style={styles.Button}>
-      <Text style={styles.text}> accede au menu</Text>
+      <Text style={styles.text}>{title}</Text>
     </Pressable>
   );
 }
