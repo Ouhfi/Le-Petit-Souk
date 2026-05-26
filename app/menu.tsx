@@ -18,7 +18,7 @@ export default function Menu() {
       
        <Button
               title="home"
-              onPress={() => router.back("/menu")}
+              onPress={() => router.back("/home")}
             />
     </View>
   );
