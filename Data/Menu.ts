@@ -20,7 +20,7 @@ export const menuData = [
     name: "Harira avec Chebakia",
     category: "Soupe et dessert",
     price: "20 MAD",
-    image: require("../image/chebakia.jpg"),
+    image: require("../image/harira-marocaine.jpg"),
   },
 
   {

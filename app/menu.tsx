@@ -15,10 +15,10 @@ export default function Menu() {
           <Card key={item.id} item={item} />
         ))}
       </ScrollView>
-      
+
        <Button
               title="home"
-              onPress={() => router.back("/home")}
+              onPress={() => router.back()}
             />
     </View>
   );
